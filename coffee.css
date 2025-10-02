@@ -84,11 +84,10 @@
 
     /* Navbar stylings */
     header {
-    position: fixed;
+        position: fixed;
         width: 100%;
         z-index: 5;
         background: var(--primary-color);
-
     }
 
     header .navbar {
@@ -133,7 +132,8 @@
     }
 
     .hero-section .section-content {
-        display: flex;
+        display: flex; 
+        padding: 40px;
         align-items: center;
         min-height: 100vh;
         color: var(--white-color);
@@ -283,6 +283,37 @@
         font-size: var(--font-size-m);
     }
 
+    /* Testimonials section styling */
+    .testimonials-section {
+        padding: 50px 0 100px;
+        background: var(--light-pink-color);
+    }
+
+    .testimonials-section .testimonial {
+        display: flex;
+        padding: 35px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-section .testimonial .user-image {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        margin-bottom: 50px;
+        border-radius: var(--border-radius-circle)
+    }
+
+    .testimonials-section .testimonial .name {
+        margin-bottom: 16px;
+        font-size: var(--font-size-m);
+    }
+
+    .testimonials-section .testimonial .feedback {
+        line-height: 25px;
+    }
+
     /* Responsive media query code for max width 1024px */
     @media screen and (max-width: 1024px) {
         .menu-section .menu-list {
@@ -319,13 +350,13 @@
         font-size: var(--font-size-l);
     }
 
-    .navbar #menu-close-button {
+    .navbar #Menu-close-button {
         position: absolute;
         right: 30px;
         top: 30px;
     }
 
-    .navbar #menu-open-button {
+    .navbar #Menu-open-button {
         color: var(--white-color);
     }
 
@@ -401,10 +432,9 @@
     }
 }
 
-/* Responsive media query code for max width 640px */
 @media screen and (max-width: 640px) {
     .menu-section .menu-list {
-        gap: 60px;
+       gap: 60px;
     }
 
     .menu-section .menu-list .menu-item {

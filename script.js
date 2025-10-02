@@ -8,3 +8,19 @@ menuOPenButton.addEventListener("click", () => {
 
 // Close menu when the close button is clicked
 menuCloseButton.addEventListener("click", () => menuOPenButton.click());
+
+// Initialize Swiper
+const swiper = new swiper('.slider-wrapper', {
+    loop: true,
+    
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
